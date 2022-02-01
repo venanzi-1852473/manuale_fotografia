@@ -1,3 +1,5 @@
+\graphicspath{ {../images/} }
+
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -14,12 +16,20 @@
     {0pt}
     {\LARGE}
 
-
 %\titleformat
-%    {\chapter}[display]  
-%    {\normalfont\huge\bfseries}
-%    {\chaptertitlename\ \thechapter}
+%    {\section}[display]
+%    {\normalfont\bfseries}
+%    {}
 %    {0pt}
-%    {\LARGE}
-%    \titlespacing
-%    {\chapter}{0pt}{0pt}{0pt}
+%    {\Large}
+
+%rende più alte le righe delle tabelle (serve per far entrare bene le frazioni)
+\renewcommand{\arraystretch}{2}
+
+%titolo della table of contents
+\renewcommand{\contentsname}{Indice}
+
+\pagestyle{plain}
+\fancyhf{}
+
+\rfoot{pag. \thepage}

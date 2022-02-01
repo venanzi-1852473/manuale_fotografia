@@ -33,8 +33,18 @@ Usare tempi molto \textit{veloci} fa entrare poca luce e blocca la scena, ogni m
 Per iniziare prova a usare tempi che ti permettano di esporre correttamente l'immagine senza farla venire tutta mossa; quando poi si è capito come funzionano i tempi di scatto si possono usare in modo più creativo: tempi corti per una scena che vogliamo immortalare così com'è, o tempi più lunghi per mostrare il movimento del nostro soggetto (vedi su internet \textit{car trails} e \textit{star trails}).
 
 I principali \textbf{stop} sono:
-\[ \frac{1}{4000}s, \frac{1}{2000}s, \frac{1}{1000}s, \frac{1}{500}s, \frac{1}{250}s, \frac{1}{125}s, \frac{1}{60}s, \frac{1}{30}s, \frac{1}{15}s, \frac{1}{8}s, \frac{1}{4}s, \frac{1}{2}s \]
-\[ 1s, 2s, 4s, 8s, 15s, 30s \]
+%\[ \frac{1}{4000}s, \frac{1}{2000}s, \frac{1}{1000}s, \frac{1}{500}s, \frac{1}{250}s, \frac{1}{125}s, \frac{1}{60}s, \frac{1}{30}s, \frac{1}{15}s, \frac{1}{8}s, \frac{1}{4}s, \frac{1}{2}s \]
+%\[ 1s, 2s, 4s, 8s, 15s, 30s \]
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|} 
+        \hline
+        $\frac{1}{4000}s$ & $\frac{1}{2000}s$ & $\frac{1}{1000}s$ & $\frac{1}{500}s$ & $\frac{1}{250}s$                                & $\frac{1}{125}s$ & $\frac{1}{60}s$       & $\frac{1}{30}s$       & $\frac{1}{15}s$       & $\frac{1}{8}s$        & $\frac{1}{4}s$        & $\frac{1}{2}s$         \\[0.3cm] 
+        \hline
+        $1s$              & $2s$              & $4s$              & $8s$             & $15s$ & $30s$            & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{}  \\
+        \hline
+    \end{tabular}
+\end{table}
 
 Sono abbastanza intuitivi: $\frac{1}{1000}$s dura il doppio del tempo rispetto a $\frac{1}{2000}$s, quindi fa entrare il doppio della luce, e quindi ha uno stop di luce in più.\newline
 Il medesimo ragionamento vale per tutti gli stop; ad esempio $\frac{1}{125}$s ha 2 stop in meno di $\frac{1}{60}$s.
@@ -51,8 +61,15 @@ limiti fisici, per far entrare più o meno luce.
 
 Il valore è indicato da un numero preceduto da $f/$; gli stop del diaframma sono detti, in inglese, \textit{f stops}.
 
-I principali \textit{stop} sono:
-\[ 1.0 1.4 2.0 2.8 4.0 5.6 8.0 11 16 22 35 45 64 \]
+I principali \textbf{stop} sono:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+        \hline
+        $1.0$ & $1.4$ & $2.0$ & $2.8$ & $4.0$ & $5.6$ & $8.0$ & $11$ & $16$ & $22$ & $35$ & $45$ & $64$\\
+        \hline
+    \end{tabular}
+\end{table}
 
 \nb La scala può continuare anche oltre $f/64$, ma le fotocamere che si usano al giorno d'oggi usano obiettivi che solitamente non vanno oltre $f/22$.
 
@@ -68,5 +85,43 @@ nitidezza e profondità di campo, ma questa cosa verrà spiegata più avanti.
 \fbox{Il file originale ha un'appendice che qui voglio spostare in Rudimenti non, devo ricordarmi di farlo}
 
 
-\subsection{ISO}  \label{subsec:ISO}
 
+\subsection{ISO}  \label{subsec:ISO}
+Il valore più semplice da capire è forse l'ISO.
+Una volta indicava la sensibilità della pellicola alla luce, ora si usa anche per indicare la sensibilità del sensore digitale alla luce.
+
+Più è alto il valore ISO più è sensibile il sensore e più luminosa sarà l'immagine.\\
+\nb Non entra più luce, ma possiamo dire che quella che entra viene "più enfatizzata".
+
+Se fosse tutto così semplice ci basterebbe alzare gli ISO per avere foto più luminose, giusto? Sì, peccato ci sia un grande problema: ISO alti generano più \textbf{rumore}.
+Il rumore in una foto è composto da quei puntini blu e rossi, che si vedono specialmente in foto fatte al buio e/o con fotocamere di bassa qualità. È un effetto indesiderato che sempre (o quasi sempre) si vuole evitare,
+per questo è preferibile tenere gli ISO più bassi possibile.
+
+Per iniziare un buon approccio può essere: tenere gli ISO più bassi che si può, e alzarli solo quando ci si accorge che si è costretti a farlo, ad esempio se non possiamo prolungare ulteriormente il \textit{tempo di scatto} senza far venire poi mossa la foto.
+
+I principali \textbf{stop} sono:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+        \hline
+        $100$ & $200$ & $400$ & $800$ & $1600$ & $3200$ & $6400$ & $12800$ & $25600$\\
+        \hline
+    \end{tabular}
+\end{table}
+
+I valori si possono calcolare potenzialmente all'infinito continuando a moltiplicare per 2 (es. $25600 \cdot 2 = 51200$).
+
+
+
+\subsection{Impostare i valori} \label{subsec:setvalori}
+Ogni fotocamera, specialmente tra marche diverse, ha la propria interfaccia, tuttavia il modo in cui si possono impostare i valori è all'incirca lo stesso.
+Oltre ad avere bottoni e ghiere, molte fotocamere permettono di impostare i valori direttamente dal display, che in molti casi è touch.
+
+Il \textbf{tempo di scatto} si può impostare con una rotellina, solitamente posta nelle vicinanze del bottone per scattare.
+
+Il \textbf{diaframma} si può impostare tenendo premuto un tasto con scritto "Av", con accanto un quadratino bianco e nero con i simboli + e -, e, \textit{mentre si tiene premuto questo tasto}, si gira la rotellina che si usa per modificare il tempo di scatto.
+Alcuni modelli non hanno queesto bottone ma permettono di moficare il diaframma usando un'altra rotellina, che funziona come quella del tempo di scatto, ma che è dedicata al diaframma.
+
+Gli \textbf{ISO} solitamente hanno un bottone dedicato con scritto sopra "ISO", lo si preme, si imposta il valore, e si dà l'ok.
+
+Per qualunque dubbio sul proprio modello specifico di fotocamera è sempre bene consultare il libretto di istruzioni, che spiega bene quale tasto/ghiera faccia cosa, e nel caso consultare internet.
