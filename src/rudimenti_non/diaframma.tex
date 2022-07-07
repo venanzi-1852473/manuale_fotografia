@@ -23,8 +23,13 @@ Con un obiettivo da ritratti (es. 85mm) e molto aperto (es. $f/1.4$), se si vuol
 Sono errori? Non necessariamente, possono essere scelte stilistiche, ma se si vuole mettere a fuoco tutto il volto le soluzioni sono due: allontanarsi dal soggetto oppure chiudere un po' il diaframma, così da aumentare la profondità di campo.
 
 A seguire un esempio per vedere come una diversa apertura del diaframma influenzi la profondità di campo. Tutte le foto sono state scattate a circa 5cm dal muro, con una focale di 28mm.
+Le foto verranno mostrate in due modi diversi:
+\begin{itemize}
+    \item[-] prima senza alcuna modifica
+    \item[-] poi con un filtro che mette in evidenza la zona nitida di ogni immagine (ovvero la zona viola)
+\end{itemize}
 
-\begin{figure}[!ht]
+\begin{figure}[H] %!ht
     \centering
         \begin{subfigure}{0.45\linewidth}
             \includegraphics[width=\linewidth]{2.8.jpg}
@@ -47,23 +52,50 @@ A seguire un esempio per vedere come una diversa apertura del diaframma influenz
         \end{subfigure}
     
     %\caption{2 x 3 grid of images}
-    \label{fig:diaframmadof}
+    %\label{fig:diaframmadof}
 \end{figure}
+
+\begin{figure}[H]
+    \centering
+        \begin{subfigure}{0.45\linewidth}
+            \includegraphics[width=\linewidth]{2.8_edges.jpg}
+            \caption{$f/2.8$}
+        \end{subfigure}
+    \hfil
+        \begin{subfigure}{0.45\linewidth}
+            \includegraphics[width=\linewidth]{8_edges.jpg}
+            \caption{$f/8$}
+        \end{subfigure}
+    
+        \begin{subfigure}{0.45\linewidth}
+            \includegraphics[width=\linewidth]{5.6_edges.jpg}
+            \caption{$f/5.6$}
+        \end{subfigure}
+    \hfil
+        \begin{subfigure}{0.45\linewidth}
+            \includegraphics[width=\linewidth]{22_edges.jpg}
+            \caption{$f/22$}
+        \end{subfigure}
+    
+    \caption{In questo modo è molto facile visualizzare la profondità di campo}
+    %\label{fig:diaframmadof}
+\end{figure}
+
 
 A seguire un altro esempio che mostra come chiudere il diaframma modifichi la forma delle luci fuori fuoco. Per le foto è stato usato un Canon \lens{50}{1.8}, che ha un diaframma a 5 lamelle.
 \begin{figure}[H]
     \centering
-        \begin{subfigure}{0.30\linewidth}
+        \begin{subfigure}{0.33\linewidth}
             \includegraphics[width=\linewidth]{Luci_1.8.jpg}
             \caption{$f/1.8$}
         \end{subfigure}
     %\hfil
-        \begin{subfigure}{0.30\linewidth}
+        \begin{subfigure}{0.33\linewidth}
             \includegraphics[width=\linewidth]{Luci_2.8.jpg}
             \caption{$f/2.8$}
         \end{subfigure}
     
-        \begin{subfigure}{0.30\linewidth}
+        \begin{subfigure}{0.33\linewidth}
             \includegraphics[width=\linewidth]{Luci_8.jpg}
             \caption{$f/8$}
         \end{subfigure}
@@ -101,4 +133,24 @@ Detto in altre parole, se facciamo due foto, nelle stesse identiche condizioni d
 Il T stop (T per \textit{Transmission}) invece non ha questo problema, indica infatti la quantità di luce che la lente fa arrivare all'obiettivo.
 Quindi se si usano due obiettivi con lo stesso T stop abbiamo la garanzia che la luminosità delle foto sia la stessa.
 
-Lenti misurate in T stop sono in ogni caso usate nella cinematografia, e possono costare diverse migliaia di euro; nella fotografia sono più che sufficienti lenti in $f$ stop.
+Lenti misurate in T stop sono solitamente pensate per fare video, non foto; hanno infatti, molto spesso, una serie di caratteristiche desiderabili per il video, spesso poco o per niente sfruttabili quando si scattano foto.
+
+Queste caratteristiche sono:
+\begin{itemize}
+    \item[-] sono lenti completamente manuali (i.e. messa a fuoco, focale e diaframma si controllano solo a mano)
+    \item[-] le ghiere di messa a fuoco e diaframma hanno dei denti molto grandi, che permettono di agganciare il follow focus (uno strumento che aiuta a ruotare le ghiere con più precisione)
+    \item[-] la ghiera del diaframma non ruota a scatti, ma è continua
+    \item[-] \textit{focus breathing} quasi del tutto assente
+    \item[-] se sono lenti zoom spesso sono \textit{parafocali}
+\end{itemize}
+
+Cos'è il \textbf{focus breathing}?
+Quando mettiamo a fuoco, l'obiettivo, anche se in maniera molto contenuta, va un po' avanti e indietro; di fatto è come se stessimo zoommando in maniera quasi impercettibile.
+Se dobbiamo scattare una foto questo non è un problema, ma in video questo sfasamento è visibile e solitamente non molto gradito.
+
+Cos'è una lente \textbf{parafocale}?
+Quando andiamo a cambiare lo zoom di una lente (quindi parliamo di lenti zoom, non fisse) cambia anche la messa a fuoco.
+Esempio: zoommo al massimo su un soggetto e lo messo a fuoco, se poi torno allo zoom minimo (quindi il più grandangolare possibile) la messa a fuoco è cambiata e il soggetto non è più a fuoco.
+Questo ragionamento vale in entrambi i versi, ovviamente.
+
+Le lenti parafocali non hanno questo problema: la messa a fuoco è costante, indipendentemente dallo zoom.

@@ -40,3 +40,20 @@
 \rfoot{pag. \thepage}
 
 \addbibresource{bibliography.bib}
+
+%copiato da https://tex.stackexchange.com/questions/77809/how-do-i-remove-white-space-before-or-after-the-figures-and-tables
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\setlength{\floatsep}{5pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{5pt plus 2pt minus 2pt}
+\setlength{\intextsep}{5pt plus 2pt minus 2pt}
+
+%cambia il caption delle immagini con "fig.", invece del "Figure" di default
+\renewcommand{\figurename}{fig.}
+
