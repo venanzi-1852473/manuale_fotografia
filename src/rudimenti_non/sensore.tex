@@ -50,9 +50,14 @@ Gli APS-C della Canon croppano con un fattore moltiplicativo di $1.6$; ad esempi
 
 Gli APS-C della Nikon sono poco più grandi di quelli che usa Canon e croppano con un fattore di $1.5$. Il Micro 4/3 invece croppa $\times 2$.
 
-I fattori di crop sono un informazione ben nota, e non essendoci molti tipi di sensori diversi in commercio (parlando delle dimensioni) non è un'informazione che serve costantemente andare a cercare, ma nel caso volessimo possiamo
-facilmente calcolarlo. Basta fare il rapporto tra la lunghezza della diagonale di un full frame e la diagonale del sensore che ci interessa, ovvero applichiamo la seguente formula:
-\[ \dfrac{\text{diagonale full frame}}{\text{diagonale sensore di interesse}} \]
+Il fattore di crop dei sensori è un dato ben noto; basti pensare che la quasi totalità delle fotocamere reflex e mirrorless in commercio sono fullframe (quindi niente crop, o crop $\times 1$) o APS-C (crop a $\times 1.5$ per quasi tutti i sensori APS-C e $\times 1.6$ per gli APS-C Canon); esistono fotocamere digitali con sensori medio formato, ma costano tanto e sono poco usate. Dunque se si vuole sapere il fattore di crop di un sensore è sufficiente una veloce ricerca su internet.
+Se però vogliamo calcolare il fattore di crop di un sensore è possibile farlo con una semplice formula matematica:
+\begin{equation}
+    \text{crop} = \dfrac{\text{diagonale full frame}}{\text{diagonale sensore di interesse}}
+    \label{eq:crop}
+\end{equation}
+
+%I fattori di crop sono un informazione ben nota, e non essendoci molti tipi di sensori diversi in commercio (parlando delle dimensioni) non è un'informazione che serve costantemente andare a cercare, ma nel caso volessimo possiamo facilmente calcolarlo. Basta fare il rapporto tra la lunghezza della diagonale di un full frame e la diagonale del sensore che ci interessa, ovvero applichiamo la seguente formula:
 
 Sappiamo quanto sono lunghi i lati di un sensore, e possiamo applicare il \textit{Teorema di Pitagora} per ricavare la diagonale:
 \[ d = \sqrt{b^2 + h^2} \]
@@ -65,6 +70,12 @@ La diagonale di un sensore APS-C Canon è:
 
 Quindi il fattore di crop dei sensori APS-C Canon è:
 \[ \dfrac{d_{full}}{d_{apsc}} = \dfrac{43.267}{26.681} \approx 1.6 \]
+
+Come già detto quasi tutte le fotocamere digitali in commercio hanno le solite dimensioni, e quindi saper calcolare il fattore di crop può servire più per soddisfare la curiosità del fotografo che per qualche pratica applicazione. Notare che sto escludendo tutte le fotocamere compatte/bridge, che hanno spesso sensori molto piccoli, e i telefoni, che hanno sensori ancora più piccoli.
+
+Il discorso cambia quando si parla di fotografia analogica.
+Non solo le vecchie fotocamere analogiche usavano più formati di quanti se ne usino oggi col digitale, ma sono formati che oggi in disuso (se non da chi scatta con queste vecchie fotocamere); è normale quindi aspettarsi di non conoscerne il fattore di crop.
+Con l'equazione~\ref{eq:crop} ci basta sapere base e altezza di una foto in un qualunque formato per conoscere il fattore di crop.
 
 
 \subsection{Medio formato e oltre} \label{subsec:sensorimedioformato}
