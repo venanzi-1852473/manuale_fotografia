@@ -1,6 +1,6 @@
 # Informazioni utili per la vita da fotografo
 
-Percorso pdf: [Manuale.pdf](./src/Manuale.pdf)
+Percorso pdf: [src/Manuale.pdf](./src/Manuale.pdf)
 
 In queste pagine si cercherà di dare delle nozioni di base che siano sufficienti per iniziare a capire come scattare con la fotocamera in manuale.
 Dopo aver visto le basi di una *corretta* esposizione, verranno date altre nozioni che servono per capire meglio cosa si ha in mano quando si scatta, oltre ad avere altri strumenti per poter prendere decisioni più creative e meno statiche.
