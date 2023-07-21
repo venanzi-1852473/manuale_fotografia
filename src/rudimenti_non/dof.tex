@@ -4,6 +4,7 @@ La \textbf{profondità di campo}, in inglese \textit{depth of field}, rappresent
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{PdC.png}
+    \caption{Rappresentazione grafica della profondità di campo}
 \end{figure}
 
 Avere maggiore profondità di campo significa avere una più grande zona a fuoco, mentre restringere la profondità di campo significa avere una porzione dell'inquadratura messa a fuoco più stretta.
@@ -47,7 +48,9 @@ Come sapere la distanza alla quale stiamo mettendo a fuoco? Alcuni obiettivi han
 La distanza iperfocale ovviamente non è fissa, e dipende dalla focale della nostra lente, dall'apertura e dalla grandezza del sensore.
 
 Online si trovano moltissime tabelle che ci dicono le distanze iperfocali, già calcolate, per diverse combinazioni di lenti, aperture e sensori. All'occorrenza possiamo calcolare l'iperfocale con una semplice formula:
-\[ H = \dfrac{f^2}{N \cdot c} + f \]
+\begin{equation}\label{eq:iperfocale}
+    H = \dfrac{f^2}{N \cdot c} + f
+\end{equation}
 Dove:
 \begin{itemize}
     \item[-] $H$ è la distanza iperfocale, espressa in millimetri
@@ -58,12 +61,20 @@ Dove:
     }, espresso in millimetri
 \end{itemize}
 
-\nb Il valore della lunghezza focale è talmente piccolo rispetto al valore della frazione che si può omettere nella formula, ovvero è sufficiente fare la frazione senza poi sommare la focale (i.e. $+ f$).
+\nb Il valore della lunghezza focale è talmente piccolo rispetto al valore della frazione che si può omettere nell'Equazione~\ref{eq:iperfocale}. Ovvero si può approssimare il calcolo a $H = \dfrac{f^2}{N \cdot c}$, omettendo il $+f$.
 
 I valori del circolo di confusione sono noti, e si trovano facilmente in rete molte tabelle.
-A seguire sono riportati alcuni valori di interesse del circolo su diversi sensori:
-\begin{itemize}
-    \item[-] APS-C Canon: $0.018$mm
-    \item[-] APS-C Nikon: $0.019$mm
-    \item[-] Full frame: $0.029$mm
-\end{itemize}
+I valori del circolo di confusione di alcuni formati sono riportati nella Tabella~\ref{tab:circoli_confusione}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        Full frame                & 0.029mm  \\ \hline
+        APS-C ($\times$1.5)       & 0.019mm  \\ \hline
+        APS-C Canon ($\times$1.6) & 0.018mm  \\ \hline
+        4/3                       & 0.015 mm \\ \hline
+    \end{tabular}
+    \caption{Tabella con i valori del circolo di confusione dei formati più diffusi}
+    \label{tab:circoli_confusione}
+\end{table}

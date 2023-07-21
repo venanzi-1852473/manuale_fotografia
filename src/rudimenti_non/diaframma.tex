@@ -23,11 +23,7 @@ Con un obiettivo da ritratti (es. 85mm) e molto aperto (es. $f/1.4$), se si vuol
 Sono errori? Non necessariamente, possono essere scelte stilistiche, ma se si vuole mettere a fuoco tutto il volto le soluzioni sono due: allontanarsi dal soggetto oppure chiudere un po' il diaframma, così da aumentare la profondità di campo.
 
 A seguire un esempio per vedere come una diversa apertura del diaframma influenzi la profondità di campo. Tutte le foto sono state scattate a circa 5cm dal muro, con una focale di 28mm.
-Le foto verranno mostrate in due modi diversi:
-\begin{itemize}
-    \item[-] prima senza alcuna modifica
-    \item[-] poi con un filtro che mette in evidenza la zona nitida di ogni immagine (ovvero la zona viola)
-\end{itemize}
+Le foto verranno mostrate in due modi diversi. Nella Figura~\ref{fig:muro_dof_originale} vengono mostrate le foto originali, mentre nella Figura~\ref{fig:muro_dof_bordi} è stato applicato un filtro che mette in evidenza la zona nitida della foto.
 
 \begin{figure}[H] %!ht
     \centering
@@ -51,8 +47,8 @@ Le foto verranno mostrate in due modi diversi:
             \caption{$f/22$}
         \end{subfigure}
     
-    %\caption{2 x 3 grid of images}
-    %\label{fig:diaframmadof}
+    \caption{Foto originali. La differenza nella profondità di campo è particolarmente visibile nei due estremi, ovvero a $f/2.8$ e $f/22$}
+    \label{fig:muro_dof_originale}
 \end{figure}
 
 \begin{figure}[H]
@@ -77,12 +73,13 @@ Le foto verranno mostrate in due modi diversi:
             \caption{$f/22$}
         \end{subfigure}
     
-    \caption{In questo caso è evidente come, chiudendo il diaframma, la profondità di campo vada sempre aumentando}
-    %\label{fig:diaframmadof}
+    \caption{Più è forte e nitido il viola, più la zona è nitida. Con il filtro applicato è evidente come, chiudere il diaframma, permetta una maggiore profondità di campo}
+    \label{fig:muro_dof_bordi}
 \end{figure}
 
 
-A seguire un altro esempio che mostra come chiudere il diaframma modifichi la forma delle luci fuori fuoco. Per le foto è stato usato un Canon \lens{50}{1.8}, che ha un diaframma a 5 lamelle.
+A seguire, nella Figura~\ref{fig:diaframmaluci}, un esempio che mostra come chiudere il diaframma modifichi la forma delle luci fuori fuoco.
+
 \begin{figure}[H]
     \centering
         \begin{subfigure}{0.33\linewidth}
@@ -100,7 +97,7 @@ A seguire un altro esempio che mostra come chiudere il diaframma modifichi la fo
             \caption{$f/8$}
         \end{subfigure}
 
-    %\caption{2 x 3 grid of images}
+    \caption{Foto scattate con un Canon \lens{50}{1.8}, con un diaframma a 5 lamelle, che chiudendosi formano un pentagono. Si noti come, chiudendo il diaframma, le luci fuori fuoco hanno la forma del diaframma sempre più nitida, e al contempo diventano sempre più piccole.}
     \label{fig:diaframmaluci}
 \end{figure}
 
@@ -109,13 +106,16 @@ Con la \textbf{nitidezza} invece il discorso un po' cambia. Chiudendo il diafram
 
 Ogni obiettivo ha un punto di massimo di nitidezza, quindi non si può dare una regola generale che funzioni sempre, si può però dare una regola empirica, che funziona spesso o che comunque è in grado di avvicinarsi alla realtà.
 Molti obiettivi full frame e APS-C raggiungono il massimo della nitidezza intorno a $f/8$, più aperto o più chiuso di così perdono nitidezza.
+Il motivo per cui, oltre $f/8$, gli obiettivi perdono nitidezza è dovuto alla \textit{diffrazione}\footnote{Non è scopo di questo manuale, tantomeno dell'autore, spiegare cos'è la diffrazione; cerco spiegare molto a spanne per far capire cosa succede. Se la luce deve passare attraverso un foro abbastanza piccolo, invece di viaggiare dritta, come ci aspetteremmo, si "espande" e inizia a viaggiare come un cono. Viaggiando come un cono può andare dritta, oppure sviare un po' di lato, motivo per cui possiamo perdere un po' di luce}.
 
 Se invece parliamo di lenti per sensori più grandi la situazione è tutta diversamente, specialmente con le lenti per grande formato. A causa delle dimensioni usare grandi aperture fa calare drasticamente la nitidezza; le lenti grandi formato risentono così tanto di questo problema che il diaframma completamente aperto viene usato soltanto per avere più luce per comporre e mettere a fuoco l'inquadratura, si scatta poi con aperture come $f/22$ o più.
 
 
 \subsection{Calcolare l'apertura} \label{subsec:calcolareapertura}
 L'apertura massima di un obiettivo è espressa in \textit{f stop}, ed è un valore facilmente calcolabile.
-\[ f = \dfrac{l}{d} \]
+\begin{equation}
+    f = \dfrac{l}{d}
+\end{equation}
 
 Dove:
 \begin{itemize}
