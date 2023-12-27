@@ -1,12 +1,15 @@
 \section{Raw e Jpeg} \label{sec:rawjpeg}
+%Prima di iniziare questa sezione è bene forse fare una premessa.
+%A seguire verrà data una velocissima infarinatura sui formati immagine, facendo accenni a concetti informatici, come formati immagine e algoritmi.
+%Per quanto interessanti siano questi argomenti, non ritengo sia questo il luogo dove dilungarsi per spiegarli bene, e a discapito purtroppo di una corretta comprensione.
+
 Raw e Jpeg (o jpg) sono due formati file per le immagini.
 Sono i principali formati in cui sono salvate le foto scattate con le fotocamere digitali.
 
 In questa sezione non si entrerà nei dettagli informatici dei file, ma è importante capire di cosa stiamo parlando quando diciamo che il jpg è un \textit{formato} di immagine.
 Quando si salva un file si dà a quest'ultimo un formato, che indica che tipo si file è; esistono file contenenti immagini, video, testo, programmi eseguibili e tanto altro ancora.
-Dando un formato il computer, e noi utenti, siamo in grado di capire cosa il file contiene, per poter poi usare un programma adeguato per aprirlo. Il tipo di formato è indicato con un suffisso del tipo \textit{.formato} alla fine del nome del file.
-
-Ad esempio, se salvo un file chiamato \textit{IMG\_0001.jpg}, abbiamo che \textit{IMG\_001} è il nome del file, mentre \textit{.jpg} è l'estensione, e ci dice che il file è un jpg, ovvero un'immagine.
+Dando un formato il computer, e noi utenti, siamo in grado di capire cosa il file contiene, per poter poi usare un programma adeguato per aprirlo. Il tipo di formato è indicato con un suffisso del tipo \textssc{.formato} alla fine del nome del file.
+Ad esempio, se salvo un file chiamato \textssc{IMG\_0001.jpg}, abbiamo che \textssc{IMG\_001} è il nome del file, mentre \textssc{.jpg} è l'estensione, e ci dice che il file è un jpg, ovvero un'immagine.
 
 
 Le fotocamere permettono di scegliere in che formato scattare:
@@ -21,19 +24,21 @@ Le fotocamere permettono di scegliere in che formato scattare:
 \subsection{Raw} \label{subsec:raw}
 Il raw non è esattamente un formato, le fotocamere non scattano foto in formato .raw, ma è una tipologia di formato.
 
-Raw in inglese significa, alla lettera, \textit{crudo}, e infatti indica tutti quei formati che salvano le immagini così come escono dal sensore, crude, senza alcun tipo di modifica e con tutte le informazioni che il sensore è in grado di catturare.
+Raw in inglese significa, alla lettera, \textit{crudo}, e infatti indica tutti quei formati che salvano le immagini così come escono dal sensore, crude, senza alcun tipo di modifica e con tutte le informazioni che il sensore è in grado di catturare. In realtà anche i raw vengono in parte compressi per far pesare di meno i file, e alcune fotocamere permettono anche di scattare raw a dimensioni ridotte, ma per semplicità possiamo ignorare queste cose e pensarli come il prodotto più grezzo che esce dal sensore della fotocamera.
 
 Sono formati molto pesanti ma perfetti per poter essere modificati in un secondo momento, senza perdere informazioni.
 Per dare un'idea dell'impronta lasciata da questi file, la Canon 200D scatta foto con una risoluzione di $6000 \times 4000$ (i.e. 24 megapixel), e i raw che ne escono fuori sono nell'ordine dei 30MB per ogni foto.
 
-Come anticipato non esiste un singolo formato raw, ogni azienda sviluppa il proprio formato. Canon ha .CR2, Nikon ha .NEF, Sony .ARW, e via dicendo.
+Come anticipato non esiste un singolo formato raw, ogni azienda sviluppa il proprio formato. Canon ha \textssc{.CR2}, Nikon ha \textssc{.NEF}, Sony \textssc{.ARW}, e via dicendo.
 
 
 \subsection{Jpeg} \label{subsec:jpg}
 Il formato jpg, presentato come standard (sotto il nome di Jpeg) nel 1992, è un ben noto formato di immagini.
 
-È un formato con \textit{perdita di dati}, in inglese \textit{lossy}, che comprime le immagini eliminando dettagli che, nei giusti casi, non sono percettibili all'occhio umano.
+È un formato con \textit{perdita di dati}, in inglese \textit{lossy}, che comprime le immagini eliminando dettagli che, si spera, non percettibili all'occhio umano.
+
+\nb L'algoritmo di compressione non sa quali siano i dettagli che l'occhio umano non noterà una volta tolti, non cerca di fare questa operazione. Quello che fa l'algoritmo è semplicemente seguire una serie di istruzioni che servono a comprimere l'immagine, esistono poi immagini in cui questa compressione è poco o per niente percettibile all'occhio umano, e altre per cui questo tipo di compressione è meno adatto.
 
 Le immagini jpg sono particolarmente adatte a comprimere molte delle foto che si possono fare con una fotocamera; non è invece adatto per comprimere disegni geometrici, in cui l'algoritmo di eliminazione dei dati crea artefatti ben visibili che rovinano l'immagine.
 
-I jpg inoltre hanno pochissime informazioni sull'immagine, e non sono adatti per modificare le foto scattate. Ritocchi un minimo accentuati sull'immagine creerebbero approssimazioni, che si traducono in artefatti (come ad esempio di problemi di \textit{posterizzazione}) che rovinano la foto.
+I jpg inoltre hanno pochissime informazioni sull'immagine, e non sono adatti per modificare le foto scattate. Ritocchi un minimo accentuati sull'immagine creerebbero approssimazioni nei colori, che si traducono in artefatti (come ad esempio di problemi di \textit{posterizzazione}) che rovinano la foto.
